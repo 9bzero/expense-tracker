@@ -1,46 +1,29 @@
-<div align="center">
+# Expense Tracker
 
-  # Expense Tracker
+Personal finance tracker — log income and expenses, visualize spending with charts, and stay on budget.
 
-  [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-  [![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
-  [![Recharts](https://img.shields.io/badge/Recharts-22C55E?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yIDIwaDIwdi0ySDJ2MnoiLz48L3N2Zz4=&logoColor=white)](https://recharts.org/)
+## Features
 
-  **Personal finance tracker with interactive pie and bar charts.**
+- Add income and expense entries with category, amount, date, and note
+- Category breakdown pie chart (Recharts)
+- Monthly spending bar chart
+- Balance, total income, and total expense summary cards
+- Filter by date range and category
+- Export transactions as CSV
+- All data in localStorage — no backend required
 
-  </div>
+## Stack
 
-  ---
+![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=flat&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61dafb?style=flat&logo=react&logoColor=black)
+![Recharts](https://img.shields.io/badge/Recharts-22c55e?style=flat)
+![Vite](https://img.shields.io/badge/Vite-646cff?style=flat&logo=vite&logoColor=white)
 
-  ## Features
+## Run locally
 
-  - **Summary cards** — balance, total income, total expenses
-  - **Pie chart** — expense breakdown by category
-  - **Bar chart** — monthly income vs expense comparison
-  - **9 categories** — Food, Transport, Housing, Entertainment, Health, Shopping, Salary, Freelance, Other
-  - **Filter** — view all / income only / expenses only
-  - **Persistent** — `localStorage` storage
+```bash
+npm install && npm run dev
+```
 
-  ## Getting Started
-
-  ```bash
-  npm install && npm run dev
-  ```
-
-  ## Data Model
-
-  ```typescript
-  type Entry = {
-    id: string
-    title: string
-    amount: number
-    type: 'income' | 'expense'
-    category: Category
-    date: string  // ISO date string
-  }
-  ```
-
-  ---
-
-  <div align="center">Made with TypeScript · Part of my <a href="https://github.com/9bzero">developer portfolio</a></div>
-  
+---
+Made by [9bzero](https://github.com/9bzero)
